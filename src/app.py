@@ -2,7 +2,7 @@ from flask import Flask, request, render_template
 from pickle import load
 
 app = Flask(__name__)
-model = load(open("/workspaces/flask-render-integration_mvilches/models/decision_tree_model.pkl", "rb"))
+model = load(open("../models/decision_tree_model.pkl", "rb"))
 class_dict = {
     "0": "Iris setosa",
     "1": "Iris versicolor",
